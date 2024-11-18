@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMATED CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="currency.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="ctn">
+            <label for="">Enter Amount</label> <br>
+            <input type="number" id="amount" required>
+
+        </div>
+        
+        <div class="from" >
+            <p>From</p>
+            <p>To</p>
+        </div>
+        
+            <div class="current">
+                <select id="fromCountry" class="opt">
+                    
+                </select>
+                <div>
+                    <i id="left" class='bx bx-left-arrow-alt'></i> <br>
+                    <i class='bx bx-right-arrow-alt' ></i>
+                </div>
+
+                <select id="toCountry" class="opt">
+                </select>
+            </div>
+
+            <h2 id="get">Getting exchange rate...</h2>
+
+            <button id="submit" type="submit">Get Exchange Rates</button>
+    </div>
+    <script src="currency.js"></script>
+</body>
+</html>

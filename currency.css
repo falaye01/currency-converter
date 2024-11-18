@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: rgb(252 165 165); */
+    background: linear-gradient(270deg, #ff7eb3, #ff758c, #ffbc42, #68b0ab);
+  background-size: 800% 800%;
+  animation: gradientMotion 10s ease infinite;
+}
+@keyframes gradientMotion {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.container{
+    margin-top: 2%;
+    margin-left: 35%;
+    height: 30em;
+    width: 27em;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h1{
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1.5em;
+    text-align: center;
+    
+}
+.ctn{
+    margin-top: 2.4em;
+    margin-left: 0.6em;
+    width: 15em;
+}
+label{
+    font-size: 1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    opacity: 0.8;
+}
+input{
+    height: 3em;
+    width: 23em;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-style: 0 solid rgb(196, 193, 193);
+    font-size: 20px;
+    background-color: white;
+    margin-top: 0.4em;
+}
+input:focus{
+    outline: none;
+}
+.from{
+    display: flex;
+    gap: 11.4em;
+    padding-top: 4em;
+    margin-left: 1em;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.7;
+}
+.opt{
+    height: 3em;
+    width: 10em;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+
+}
+option {
+    background-color: #f5f5f5;
+    color: #2c3e50;
+    font-size: 16px;
+}
+.opt:focus{
+    outline: none;
+}
+.current{
+    display: flex;
+    gap: 10%;
+    margin-top: 0.3em;
+    margin-left: 0.6em;
+}
+h2{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.8;
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+}
+#submit{
+    height: 3em;
+    margin-top: 1.3em;
+    width: 26.5em;
+    margin-left: 0.5em;
+    border-radius: 4px;
+    border-style: none;
+    background-color: purple;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
